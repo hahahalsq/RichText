@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" type="text/css" href="css/wangEditor.min.css">
+</head>
+<body>
+    <div style="display: flex;justify-content: center;">
+        <div style="width:480px;">
+            <div id="editor" style="height:200px;">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/wangEditor.js"></script>
+<script type="text/javascript">
+    var editor = new wangEditor('editor');
+    editor.config.menus = [
+        'bold',
+        'underline',
+        'italic',
+        'eraser',
+        'forecolor',
+        'bgcolor',
+        'fontfamily',
+        'fontsize',
+        'head',
+        'link',
+        'unlink',
+        'undo',
+        'redo'
+     ];
+    editor.create()
+</script>
+
+
+</html>
